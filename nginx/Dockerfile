@@ -7,7 +7,7 @@ FROM node:latest as build
 WORKDIR /usr/local/app
 
 # Add the source code to app
-COPY ./appdocker/ .
+COPY ../appdocker/ .
 
 # Install all the dependencies
 RUN npm install
