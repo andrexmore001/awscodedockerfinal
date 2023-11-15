@@ -1,3 +1,4 @@
+# commands to start apps
 #!/bin/bash
-# Iniciar el contenedor después de la instalación
-sudo docker start pruebas
+cd /home/ubuntu/aws-code-deploy-demo/docker
+docker-compose up -d --force-recreate --no-deps --build
