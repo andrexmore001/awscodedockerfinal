@@ -27,4 +27,4 @@ RUN rm -rf ./*
 # Copy the build output to replace the default nginx contents.
 COPY --from=build /usr/local/app/dist/appdocker .
 # Containers run nginx with global directives and daemon off
-ENTRYPOINT ["nginx", "-g", "daemon off;"]
+#ENTRYPOINT ["nginx", "-g", "daemon off;"]
