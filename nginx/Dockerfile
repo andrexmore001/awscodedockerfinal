@@ -25,6 +25,6 @@ WORKDIR /usr/share/nginx/html
 # Remove default nginx static assets
 #RUN rm -rf ./*
 # Copy the build output to replace the default nginx contents.
-COPY --from=build /usr/local/app/dist/appdocker .
+COPY --from=build /usr/local/app/dist/prueba .
 # Containers run nginx with global directives and daemon off
 #ENTRYPOINT ["nginx", "-g", "daemon off;"]
