@@ -23,7 +23,7 @@ FROM nginx:latest
 # Set working directory to nginx asset directory
 WORKDIR /usr/share/nginx/html
 # Remove default nginx static assets
-RUN rm -rf ./*
+#RUN rm -rf ./*
 # Copy the build output to replace the default nginx contents.
 COPY --from=build /usr/local/app/dist/appdocker .
 # Containers run nginx with global directives and daemon off
